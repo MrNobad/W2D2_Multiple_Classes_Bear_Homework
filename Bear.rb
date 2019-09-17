@@ -16,4 +16,8 @@ class Bear
   def add_fish_to_stomach(fish)
     @stomach.push(fish)
   end
+
+  def bear_roars(roar)
+      return "I'm a Bear ... #{roar}"
+    end
 end
