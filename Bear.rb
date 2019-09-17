@@ -9,7 +9,11 @@ class Bear
 
   end
 
-  # def bear_has_name()
-  #   return @bear_name
-  # end
+  def stomach_count()
+    return @stomach.length()
+  end
+
+  def add_fish_to_stomach(fish)
+      @stomach.push(fish)
+    end
 end
