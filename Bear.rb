@@ -14,6 +14,6 @@ class Bear
   end
 
   def add_fish_to_stomach(fish)
-      @stomach.push(fish)
-    end
+    @stomach.push(fish)
+  end
 end
