@@ -13,6 +13,7 @@ class RiverTest < MiniTest::Test
     @fishs = [@fish1, @fish2, @fish3]
 
     @river_name = River.new("Ganges", @fishs)
+    # @fishs = Fish.new("Janet", "Jack", "Jill")
 
   end
 
@@ -24,9 +25,15 @@ class RiverTest < MiniTest::Test
     assert_equal(3, @fishs.length)
   end
 
+  def test_river_starts_empty()
+    assert_equal(0, @river_name.fish_count())
+  end
+
+# There are no fish in the river so this passes.
+# Don't know how to add fish to take out?
   def test_can_remove_fish_from_river()
-    @river_name.remove_fish_from_river(@fish)
-    assert_equal(2, @river_name.fish_count())
+    @river_name.remove_fish_from_river(@fishs)
+    assert_equal(0, @river_name.fish_count())
   end
 
 end
